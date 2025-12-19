@@ -137,7 +137,7 @@ public class Runigram {
 		for (int i = 0; i < height; i++) {
 			for (int j = 0; j <width; j++){
 				int newrow = i * h0 / height;
-				int newcol = i * w0 / width;
+				int newcol = j * w0 / width;
 				result[i][j] = image[newrow][newcol];
 			}
 		}
@@ -194,7 +194,7 @@ public class Runigram {
 			display(frame);
             StdDraw.pause(500);
 		}
-		
+
 	}
 	
 	/** Creates a canvas for the given image. */
